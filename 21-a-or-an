@@ -1,0 +1,8 @@
+public String aOrAn(String word) {
+    Set<String> startingVowels = new Set<String>{'a','e','i','o','u'};
+    if(startingVowels.contains(word.substring(0,1))) {
+        return 'an ' + word;
+    } else {
+        return 'a ' + word;
+    }
+}
