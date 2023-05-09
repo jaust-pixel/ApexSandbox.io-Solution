@@ -11,6 +11,9 @@ public Integer rockPaperScissors(String player1, String player2) {
                 when 'paper' {
                     return 2;
                 }
+                when else {
+                    return 0;
+                }
             }
         }
         when 'paper' {
@@ -21,6 +24,9 @@ public Integer rockPaperScissors(String player1, String player2) {
                 when 'scissors' {
                     return 2;
                 }
+                when else {
+                    return 0;
+                }
             }
         }
         when 'scissors' {
@@ -30,6 +36,9 @@ public Integer rockPaperScissors(String player1, String player2) {
                 }
                 when 'rock' {
                     return 2;
+                }
+                when else {
+                    return 0;
                 }
             }
         }
