@@ -11,8 +11,8 @@ public Boolean companionPlants(String plant1, String plant2) {
             return true;
         }
     }
-    for(String plant2 : plantMap.get(plant2)) {
-        if(plant2.equalsIgnoreCase(plant1)) {
+    for(String plantB : plantMap.get(plant2)) {
+        if(plantB.equalsIgnoreCase(plant1)) {
             return true;
         }
     }
