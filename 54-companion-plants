@@ -1,0 +1,21 @@
+public Boolean companionPlants(String plant1, String plant2) {    
+    for(String plant : plantMap.get(plant1)) {
+        if(plant.equalsIgnoreCase(plant2)) {
+            return true;
+        }
+    }
+    for(String plant2 : plantMap.get(plant2)) {
+        if(plant2.equalsIgnoreCase(plant1)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+private Map<String, List<String>> plantMap = new Map<String, List<String>> {
+    'lettuce' => new List<String>{'cucumbers', 'onions'},
+    'cucumbers' => new List<String>{'lettuce'},
+    'onions' => new List<String>{'lettuce', 'carrots', 'tomatoes'},
+    'carrots' => new List<String>{'onions'},
+    'tomatoes' => new List<String>{'onions'}
+}
