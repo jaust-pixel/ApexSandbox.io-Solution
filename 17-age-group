@@ -1,0 +1,16 @@
+public String ageGroup(Integer n) {
+    if(inRange(n,0,1)) {
+        return 'Infant';
+    } else if(inRange(n,2,14)) {
+        return 'Child';
+    } else if(inRange(n,15,21)) {
+        return 'Youth';
+    } else if (n >= 22) {
+        return 'Adult';
+    }
+    return 'Unknown';
+}
+
+public Boolean inRange(Integer num, Integer lower, Integer upper) {
+    return num >= lower && num <= upper;
+}
