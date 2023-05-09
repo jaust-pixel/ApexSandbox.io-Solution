@@ -3,32 +3,32 @@ public Integer rockPaperScissors(String player1, String player2) {
         return 0;
     }
     switch on player1 {
-        case 'rock' {
+        when 'rock' {
             switch on player2 {
-                case 'scissors' {
+                when 'scissors' {
                     return 1;
                 }
-                case 'paper' {
+                when 'paper' {
                     return 2;
                 }
             }
         }
-        case 'paper' {
+        when 'paper' {
             switch on player2 {
-                case 'rock' {
+                when 'rock' {
                     return 1;
                 }
-                case 'scissors' {
+                when 'scissors' {
                     return 2;
                 }
             }
         }
-        case 'scissors' {
+        when 'scissors' {
             switch on player2 {
-                case 'paper' {
+                when 'paper' {
                     return 1;
                 }
-                case 'rock' {
+                when 'rock' {
                     return 2;
                 }
             }
