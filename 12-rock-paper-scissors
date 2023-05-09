@@ -1,0 +1,40 @@
+public Integer rockPaperScissors(String player1, String player2) {
+    if (player1.equals(player2)) {
+        return 0;
+    }
+    switch on player1 {
+        case 'rock' {
+            switch on player2 {
+                case 'scissors' {
+                    return 1;
+                }
+                case 'paper' {
+                    return 2;
+                }
+            }
+        }
+        case 'paper' {
+            switch on player2 {
+                case 'rock' {
+                    return 1;
+                }
+                case 'scissors' {
+                    return 2;
+                }
+            }
+        }
+        case 'scissors' {
+            switch on player2 {
+                case 'paper' {
+                    return 1;
+                }
+                case 'rock' {
+                    return 2;
+                }
+            }
+        }
+        default {
+            return 0;
+        }
+    }
+}
