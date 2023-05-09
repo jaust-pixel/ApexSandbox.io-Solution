@@ -12,7 +12,7 @@ public Boolean companionPlants(String plant1, String plant2) {
     return false;
 }
 
-private Map<String, List<String>> plantMap = new Map<String, List<String>> {
+public Map<String, List<String>> plantMap = new Map<String, List<String>> {
     'lettuce' => new List<String>{'cucumbers', 'onions'},
     'cucumbers' => new List<String>{'lettuce'},
     'onions' => new List<String>{'lettuce', 'carrots', 'tomatoes'},
