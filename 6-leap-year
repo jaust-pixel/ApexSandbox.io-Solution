@@ -1,0 +1,16 @@
+public Boolean isLeapYear(Integer year) {
+    //code here
+    Boolean divisbleBy4 = year % 4 == 0;
+    Boolean divisibleBy100 = year % 100 == 0;
+    Boolean divisbleBy400 = year % 400 == 0;
+
+    if(divisbleBy4){
+        if(!divisibleBy100) {
+            return true;
+        } else if(divisibleBy100) {
+            return true
+        }
+        return true;
+    }
+    return false;
+}
