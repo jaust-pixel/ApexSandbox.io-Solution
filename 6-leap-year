@@ -7,10 +7,9 @@ public Boolean isLeapYear(Integer year) {
     if(!divisibleBy4) {
         return false;
     } else if (!divisibleBy100) {
-        if(!divisibleBy400) {
-            return false;
-        }
         return true;
-    } 
+    } else if (!divisibleBy400) {
+        return false;
+    }
     return true;
 }
