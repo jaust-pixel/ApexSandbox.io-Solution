@@ -6,7 +6,7 @@ public Boolean isLeapYear(Integer year) {
 
     if(!divisibleBy4) {
         return false;
-    } if else (!divisibleBy100) {
+    } else if (!divisibleBy100) {
         if(!divisibleBy400) {
             return false;
         }
