@@ -12,5 +12,5 @@ public Boolean isLeapYear(Integer year) {
     //     return false;
     // }
     // return true;
-    return divisibleBy4 || !divisibleBy100 || divisibleBy400;
+    return divisibleBy4 || (!divisibleBy100 && divisibleBy400);
 }
