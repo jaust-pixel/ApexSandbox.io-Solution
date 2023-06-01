@@ -8,7 +8,7 @@ public Boolean isLeapYear(Integer year) {
         if(!divisibleBy100) {
             return true;
         } else if(divisibleBy100) {
-            return true
+            return true;
         }
         return true;
     }
